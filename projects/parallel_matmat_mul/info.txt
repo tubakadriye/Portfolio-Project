@@ -1,0 +1,23 @@
+Parallel Matrix Multiplication:
+
+A parallel algorithm with MPI is written and tested on the matrix sizes 2048, 4096, 6144, 8192,
+10240, 12288, 14336, 16,384, 18432 and 20480 , for the core numbers 8 , 16, 32, 64 and 128. The
+matrix sizes are chosen that way to get an even partitioning of matrices across cores. Pointwise and also
+block-wise matrix multiplication is done with this parallel algorithm and results are compared.
+Here, all matrices are allocated with dynamic memory allocation as one-dimensional arrays to
+decrease the computation cost. First, memory is allocated in each core for B, A_block, B_block,
+C_block matrices and in core 0 for matrix C. Matrix A and B are partitioned into cores by generating
+matrices A_block and B_block inside each core with the size of (SIZE/nb of processors ). Then
+B_block matrices are gathered in all cores with MPI’s allgatherv() function so each core obtained B
+matrix. Then inside each core A_block matrices are multiplied by B matrices and stored in C_block
+matrices. After that, C_block matrices are gathered with the gatherv() function inside core 0. Time is
+calculated with MPI_Wtime() function. All the allocated matrices are freed at the end of main().
+Here, collective communication is used instead of point-to-point communication because it is
+known that with point-to-point communication, communication cost increases with the increase of
+the number of cores. To get faster results, allgatherv and gatherv are used. Since allgather and gather
+functions gather just the first line of a matrix, vector versions of these are chosen to be used.
+To do the collective communication with algatherv and gatherv and to get each block matrix
+B_block within each processor, a new array data type is created with MPI_Type_create_subarray(2,
+bigsizes, subsizes, starts, MPI_ORDER_C, MPI_DOUBLE, &new_B_block); function. This
+subarray represents each row of B_block and C_block. After the creation of this new data type, they are resized back to double to be able to do the calculations inside Algatherv and gatherv with
+MPI_Type_create_resized(new_B_block, 0, sizeof(double), &B_blk);

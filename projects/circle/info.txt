@@ -1,0 +1,13 @@
+This project represents drawing a circle passing through given 3 points using OpenGl in C programming language.
+First, 3 points are asked from the user by left-clicking the mouse. To do this, first, we defined the maximum number of points N_max equal to 3. 
+Second, the following algorithm is used to show the circle's center to the user. The given 3 points can be represented by two points by moving one of them (here P3) to (0,0) position. Then calculating the new positions for P01 (x01,y01) and P(x02, y02). We wanted to show this center with a right click. First, a center variable is defined and set to 0 to show the center after 3 points are clicked. 
+Third, when right-clicked, the circle is drawn. To do this a right_click variable is defined and assigned to 0 in the beginning, to set a condition inside the mouse function. Also, a circle function that draws the circle with the given center and radius is given before the display function.
+
+
+
+
+
+
+Intro:
+This project explains a program that asks the user to draw 3 points by left-clicking the mouse and drawing a circle from these points. To do this program C language is used on an Eclipse platform with OpenGl graphics tool.
+

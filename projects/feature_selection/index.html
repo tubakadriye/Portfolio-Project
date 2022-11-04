@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width = device-width, initial-scale=1">
+       <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Medula+One&display=swap" rel="stylesheet"> 
+       <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+       <link rel="stylesheet" href="../bike_sharing/style.css">
+       <title>Feature Selection - Web Portfolio of Tuba</title> 
+    </head>
+    <body>
+        <nav class="navbar">
+            <!-- <div class="container">
+                <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu"> -->
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link" href="/Home">Home</a></li>
+                        <li><a class="nav-link active" href="/projects">Projects</a></li>
+                        <li><a class="nav-link" href="/Contact">Contact</a></li>
+                    </ul>
+
+                <!-- </div>
+
+            </div> -->
+
+        </nav>
+        
+        <main>
+            <section class="hero-image">
+                 <article class="hero-text">
+                        <a class="back-to-projects" href="/projects/index.html">Back to Projects</a>
+                        <h1>Feature Selection on Parkinsons Disease and Residual Building Datasets</h1>
+                         <p>Different methods are applied on the datasets.</p>
+                         <h2>
+                            Low Variance Filter (Quasi-Constant Features):
+                         </h2>
+                         <p>
+                            <strong>Feature selection</strong> or variable selection is the process of selecting a subset of relevant features or variables from the total features of a level in a data set to build machine learning algorithms. 
+                         </p>
+                 
+                         <p>Quasi-constant features are those that show the same value for the great majority of the observations of the dataset. In general, these features provide little, if any, information that allows a machine-learning model to discriminate or predict a target. But there can be exceptions. So you should be careful when removing these types of features.</p> 
+                         <p>
+                            Identifying and removing quasi-constant features, is an easy first step toward feature selection and more interpretable machine learning models.
+                         </p>
+                         <h2>
+                            SelectKBest Algorithm: 
+                         </h2>
+                         <p>
+                            This method select features according to the k highest scores.                            
+                         </p>
+                        
+                            <!-- <div class="image">
+                                <h3>Age Distribution: </h3> 
+                                <img src="./age_distribution.png" width="500px" alt="age distribution of the population">
+
+                            </div>
+                            <div class="image">
+                                <h3>Gender Distribution</h3>
+                                <img src="./gender_distribution.png" width="500px" alt="gender distribution of the population">
+                            </div>                         
+                         <h2>Brain tissue segmentation</h2>
+                         <p>
+                            A brain tissue segmentation method that provides segmentations of GM, WM, and CSF is implemented. This method is applied to all 652 MR images, and the three tissue volumes are calculated for each subject.
+                         </p>
+                         <h2>Feature calculation</h2>
+                         <p>
+                            A function that calculates volume features given the three tissue volumes and the overall brain volume (which is calculated from the brain masks) is implemented. A big matrix with a row for each subject and features across the columns is constructed.
+                         </p>
+                         <h2>Age regression and cross-validation </h2>
+                         <p>
+                            Different regression methods from the sci-kit-learn toolkit are implemented. The output vector containing the age of each of the subjects is constructed.
+                         </p>
+                         <p>
+                            The methods are evaluated using two-fold cross-validation where the dataset of 652 subjects is split into two equally sized sets (X1,y1) and (X2,y2) which are used for training and testing in an alternating way (so each set is used as (Xtrain,ytrain) and (Xtest,ytest) exactly once).
+                         </p> 
+                                                   -->
+                         
+                    <section id="github">
+                        <p > View this project on Github: 
+                            <a href="https://github.com/tubakadriye/feature_selection_on_parkinsons_disease_and_residual_building_datasets">https://github.com/tubakadriye/feature-selection-on-parkinsons-disease-and-residual-building-datasets</a>  
+    
+                         </p>  
+                    </section>
+                 </article>                           
+             </section>  
+        </main>
+        
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
+    </body>   
+</html>

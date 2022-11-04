@@ -1,0 +1,147 @@
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+
+    
+}
+
+h2 {
+    /* font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+h4 {
+    font-weight: 700;
+    color: black;
+    /* background-color:#b39729 ; */
+    text-shadow: 0 0 20 #000000;
+}
+
+p{
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.project_list {
+    margin-right: 0;
+    margin-left: 0; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    /* position: absolute; */
+    
+}
+
+section li {
+    padding-right: 0;
+    padding-left: 0;
+    list-style-type: none;
+    border: 3px solid blue;
+
+}
+
+.project-item {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: flex-start;
+    text-decoration: none;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #b78944;
+    /* background-color: #B69121; ; */
+    margin: 1.5rem;
+    width: 400px;
+    /* display: block;  */
+    position: relative;
+    overflow: hidden;
+
+    /* border: 3px solid purple; */
+}
+
+.project-div {
+
+
+}
+
+
+.project-item::selection {
+    background: #B69121;
+}
+
+img {
+    /* width: 700px; */
+    width: 100%;
+    vertical-align: middle;
+    /* height: 400px; */
+    object-fit:contain;
+    
+
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(48, 50, 52, 0.2);
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    align-items:center;
+    cursor:pointer;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #000000;
+    
+    
+}
+
+.content {
+    /* margin: auto 1rem 1rem; */
+    text-shadow: 0 0 20 #000000;
+
+}
+
+.content p {
+    font-weight: 900;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: white;
+
+}
+
+
+.project-item:hover{
+    transform: scale(1.1);
+    background-color: azure;
+    
+
+}
+
+.project-div:hover {
+    box-shadow: 5px 5px 5px #666;
+    border: 1px solid black;;
+}
+
+
+
+
+

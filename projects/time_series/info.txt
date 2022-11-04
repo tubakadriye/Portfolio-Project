@@ -1,0 +1,75 @@
+Time series is a sequence of observations recorded at regular time intervals. Time series analysis tracks the characteristics of a process at regular time intervals. It’s a fundamental method for understanding how a metric changes over time and forecasting future values. 
+
+Time series data is used in a wide variety of fields. 
+
+* Business: Manufacturing output, sales, prices <br>
+* Economics: GDP, stock market, and other indicators <br>
+* Social Sciences: Population trends, political changes <br>
+* Medicine: Disease, birth, and death rates <br>
+* Physical Sciences: Climate and environmental changes<br>
+
+For this type of analysis, you can think of time as the independent variable, and the goal is to model changes in a characteristic (the dependent variable). For example:
+
+* Hourly consumption of energy<br>
+* Daily sales<br>
+* Quarterly profits<br>
+* Annual changes in a country’s population<br>
+
+Autocorrelation Function
+
+Any significant non-zero autocorrelations imply that the series can be forecast from the past. (Equals one at lag-zero)
+
+
+Partial Autocorrelation Function
+
+The 1st-order partial autocorrelation will be defined to equal the 1st-order autocorrelation.
+
+__White Noise:__ uncorrelated random variables. 
+
+White noise is a series of measurements, where each value is uncorrelated with previous values. 
+
+White Noise is a series with:<br>
+* Constant mean
+* Constant variance
+* Zero autocorrelations at all lags
+gecmisten alip gelecekte kullanamiyoruz. zero olunca. 
+* Special Case: if data has a normal distribution, then Gaussian White Noise <br>
+
+The returns on the stock market are pretty close to a white noise process.
+
+ Augmented Dickey-Fuller Test
+The augmented Dicky-Fuller tests for trend non-stationarity.
+
+Null Hypothesis: The series has a unit root (beta nin 1 olmasi)(value of a =1) (series is not stationary)
+
+Alternate Hypothesis: The series has no unit root.
+
+If nonstationary, we need to transform it into stationary.
+
+
+
+Time Series Models
+
+ARIMA models, also called Box-Jenkins models, are models that may possibly include autoregressive terms, moving average terms, and differencing operations. Various abbreviations are used:
+
+* When a model only involves autoregressive terms it may be referred to as an AR model. 
+* When a model only involves moving average terms, it may be referred to as an MA model.
+* When no differencing is involved, the abbreviation ARMA may be used.
+* When involved, the abbreviation ARIMA may be used.
+* When seasonality is involved, the abbreviation SARIMA may be used.
+* When other independent variables (exogenous inputs) are involved, the abbreviation ARMAX, ARIMAX, or SARIMAX may be used.
+
+Anomaly Detection is conducted. 
+
+Forecasting with STL:
+
+STLForecast simplifies the process of using STL to remove seasonalities and then using a standard time-series model to forecast the trend and cyclical components. Forecasts of STL objects are obtained by applying a non-seasonal forecasting method to the seasonally adjusted data and re-seasonalizing using the last year of the seasonal component.
+
+
+Time series analysis is done using sarima model and stl forecasting is used for forecasting future data. 
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width = device-width, initial-scale=1">
+       <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Medula+One&display=swap" rel="stylesheet"> 
+       <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+       <link rel="stylesheet" href="../bike_sharing/style.css">
+       <title>Time Series Analysis of a Restaurant - Web Portfolio of Tuba</title> 
+    </head>
+    <body>
+        <nav class="navbar">
+            <!-- <div class="container">
+                <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu"> -->
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link" href="/Home">Home</a></li>
+                        <li><a class="nav-link active" href="/projects">Projects</a></li>
+                        <li><a class="nav-link" href="/Contact">Contact</a></li>
+                    </ul>
+
+                <!-- </div>
+
+            </div> -->
+
+        </nav>
+        
+        <main>
+            <section class="hero-image">
+                 <article class="hero-text">
+                        <a class="back-to-projects" href="/projects/index.html">Back to Projects</a>
+                        <h1 class="title">Time Series Analysis of a Restaurant</h1>
+                         <p>Time series is a sequence of observations recorded at regular time intervals. Time series analysis tracks the characteristics of a process at regular time intervals. It’s a fundamental method for understanding how a metric changes over time and forecasting future values. </p>
+                         <p>Time series data is used in a wide variety of fields. </p>
+                         <ul class="para-list">
+                           <li>Business: Manufacturing output, sales, prices</li>
+                           <li>Economics: GDP, stock market, and other indicators</li>
+                           <li>Social Sciences: Population trends, political changes</li>
+                           <li>Medicine: Disease, birth, and death rates</li>
+                           <li>Physical Sciences: Climate and environmental changes</li>
+                         </ul>
+                         <h2>
+                           Autocorrelation Function
+                         </h2>
+                         <p>Any significant non-zero autocorrelations imply that the series can be forecast from the past. (Equals one at lag-zero)</p>
+                         <h2>Partial Autocorrelation Function</h2>
+                         <p>The 1st-order partial autocorrelation will be defined to equal the 1st-order autocorrelation.</p>
+                         <h2>Augmented Dickey-Fuller Test</h2>
+                         <p>The augmented Dicky-Fuller tests for trend non-stationarity.</p>
+                         <p> <strong>Null Hypothesis:</strong>  The series has a unit root (beta nin 1 olmasi)(value of a =1) (series is not stationary)</p>
+                         <p>Alternate Hypothesis: The series has no unit root.</p>
+                         <p>If nonstationary, we need to transform it into stationary.</p>
+                         <h2>Time Series Models</h2>
+                         <p>ARIMA models, also called Box-Jenkins models, are models that may possibly include autoregressive terms, moving average terms, and differencing operations. Various abbreviations are used:</p>
+                         <ul class="para-list">
+                           <li>When a model only involves autoregressive terms it may be referred to as an AR model. </li>
+                           <li>When a model only involves moving average terms, it may be referred to as an MA model.</li>
+                           <li>When no differencing is involved, the abbreviation ARMA may be used.</li>
+                           <li>When involved, the abbreviation ARIMA may be used.</li>
+                           <li>When seasonality is involved, the abbreviation SARIMA may be used.</li>
+                           <li>When other independent variables (exogenous inputs) are involved, the abbreviation ARMAX, ARIMAX, or SARIMAX may be used.</li>
+                         </ul>
+                 
+                         <p>Anomaly Detection is conducted. </p> 
+            
+                         <h2>
+                           Forecasting with STL:
+                         </h2>
+                         <p>
+                           STLForecast simplifies the process of using STL to remove seasonalities and then using a standard time-series model to forecast the trend and cyclical components. Forecasts of STL objects are obtained by applying a non-seasonal forecasting method to the seasonally adjusted data and re-seasonalizing using the last year of the seasonal component.                         
+                         </p>
+                         <p>Time series analysis is done using sarima model and stl forecasting is used for forecasting future data. </p>
+                         <p id="github"> View this project on Github: 
+                            <a href="https://github.com/tubakadriye/time_series_project">https://github.com/tubakadriye/time-series-project</a>  
+ 
+                         </p>  
+                                     
+                 </article> 
+                          
+             </section>  
+        </main>
+        
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
+    </body>   
+</html>

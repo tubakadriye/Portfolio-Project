@@ -1,0 +1,1 @@
+In this project, an image search engine is created on javascript with pixabay api.

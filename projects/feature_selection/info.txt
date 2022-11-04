@@ -1,0 +1,31 @@
+First, one of the filter methods is used: Missing Value Ratio
+![image.png](attachment:image.png)
+
+Low Variance Filter (Quasi-Constant Features) :
+Quasi-constant features
+Quasi-constant features are those that show the same value for the great majority of the observations of the dataset. In general, these features provide little, if any, information that allows a machine-learning model to discriminate or predict a target. But there can be exceptions. So you should be careful when removing these types of features.
+
+Identifying and removing quasi-constant features, is an easy first step toward feature selection and more interpretable machine learning models.
+
+Here, I will demonstrate how to identify quasi-constant features using a dataset that I created for this course.
+
+To identify quasi-constant features, we can use the VarianceThreshold from Scikit-learn, or we can code it ourselves. If we use the VarianceThreshold, all our variables need to be numerical. If we code it manually, however, we can apply the code to both numerical and categorical variables.
+
+
+SelectKBest Algorithm: 
+- This method select features according to the k highest scores.
+ 
+
+**Feature selection** or **variable selection** is the process of selecting a subset of relevant features or variables from the total features of a level in a data set to build machine learning algorithms. 
+
+- There are various advantages of the feature selection process. These are as follows:-
+
+  1.	Improved accuracy
+  2.    Simple models are easier to interpret.
+  3.	Shorter training times
+  4.	Enhanced generalization by reducing Overfitting
+  5.	Easier to implement by software developers
+  6.	Reduced risk of data errors by model use
+  7.	Variable redundancy
+  8.	Bad learning behavior in high-dimensional spaces
+
